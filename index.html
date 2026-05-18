@@ -114,13 +114,12 @@
 
     /* ========== HERO ========== */
     .hero {
-      min-height: 100vh;
       background: linear-gradient(150deg, #eaf5fb 0%, #f5fafd 40%, #fff5f5 100%);
       display: flex;
       align-items: center;
       position: relative;
       overflow: hidden;
-      padding: 110px 80px 80px;
+      padding: 140px 80px 100px;
     }
 
     .hero::before {
@@ -233,9 +232,18 @@
       margin-bottom: 36px;
     }
 
+    .channel-icon {
+      width: 80px; height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--border);
+      margin-bottom: 20px;
+      display: block;
+    }
+
     .stats-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 12px;
       margin-bottom: 36px;
     }
@@ -596,6 +604,7 @@
 
     <div class="channel-card">
       <div class="channel-info">
+        <img src="haruto.jpg" alt="ダメ男漫画 はると" class="channel-icon">
         <div class="channel-tag">スカッと系漫画チャンネル</div>
         <div class="channel-name">ダメ男漫画 はると</div>
         <p class="channel-desc">
@@ -606,15 +615,7 @@
             <div class="stat-label">チャンネル登録者数</div>
             <div class="stat-value">約17<span class="unit">万人</span></div>
           </div>
-          <div class="stat-item">
-            <div class="stat-label">総再生回数</div>
-            <div class="stat-value">約7.3<span class="unit">億回</span></div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-label">公開動画本数</div>
-            <div class="stat-value">1,300<span class="unit">本以上</span></div>
-          </div>
-          <div class="stat-item">
+<div class="stat-item">
             <div class="stat-label">運営開始</div>
             <div class="stat-value" style="font-size:18px">2021<span class="unit">年2月〜</span></div>
           </div>
